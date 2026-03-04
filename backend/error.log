@@ -1,0 +1,1838 @@
+2025-11-19 14:32:04,370 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-19 14:32:04,371 INFO: [33mPress CTRL+C to quit[0m
+2025-11-19 14:32:04,376 INFO:  * Restarting with stat
+2025-11-19 14:32:06,393 WARNING:  * Debugger is active!
+2025-11-19 14:32:06,400 INFO:  * Debugger PIN: 473-223-681
+2025-11-19 14:32:34,496 INFO: 127.0.0.1 - - [19/Nov/2025 14:32:34] "GET /api/health HTTP/1.1" 200 -
+2025-11-19 14:33:00,438 INFO: 127.0.0.1 - - [19/Nov/2025 14:33:00] "POST /api/patient/register HTTP/1.1" 200 -
+2025-11-19 14:33:00,967 INFO: 127.0.0.1 - - [19/Nov/2025 14:33:00] "POST /api/diagnose HTTP/1.1" 200 -
+2025-11-19 14:33:01,489 INFO: 127.0.0.1 - - [19/Nov/2025 14:33:01] "POST /api/chat HTTP/1.1" 200 -
+2025-11-19 14:35:02,613 INFO:  * Detected change in 'C:\\Users\\altaf\\OneDrive\\Documents\\PBL 5TH sem\\ai-ayuverda-complete\\backend\\app.py', reloading
+2025-11-19 14:35:02,827 INFO:  * Restarting with stat
+2025-11-19 14:35:05,018 WARNING:  * Debugger is active!
+2025-11-19 14:35:05,025 INFO:  * Debugger PIN: 473-223-681
+2025-11-19 14:35:11,172 INFO:  * Detected change in 'C:\\Users\\altaf\\OneDrive\\Documents\\PBL 5TH sem\\ai-ayuverda-complete\\backend\\app.py', reloading
+2025-11-19 14:35:11,403 INFO:  * Restarting with stat
+2025-11-19 14:35:13,202 WARNING:  * Debugger is active!
+2025-11-19 14:35:13,208 INFO:  * Debugger PIN: 473-223-681
+2025-11-19 14:35:23,892 INFO:  * Detected change in 'C:\\Users\\altaf\\OneDrive\\Documents\\PBL 5TH sem\\ai-ayuverda-complete\\backend\\app.py', reloading
+2025-11-19 14:35:24,083 INFO:  * Restarting with stat
+2025-11-19 14:35:26,111 WARNING:  * Debugger is active!
+2025-11-19 14:35:26,119 INFO:  * Debugger PIN: 473-223-681
+2025-11-19 14:35:31,301 INFO:  * Detected change in 'C:\\Users\\altaf\\OneDrive\\Documents\\PBL 5TH sem\\ai-ayuverda-complete\\backend\\app.py', reloading
+2025-11-19 14:35:31,532 INFO:  * Restarting with stat
+2025-11-19 14:35:33,352 ERROR: Error ensuring DB columns
+Traceback (most recent call last):
+  File "C:\Users\altaf\OneDrive\Documents\PBL 5TH sem\ai-ayuverda-complete\backend\app.py", line 185, in ensure_db_columns
+    res = db.session.execute("PRAGMA table_info('diagnosis')").fetchall()
+          ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\scoping.py", line 765, in execute
+    return self._proxied.execute(
+           ~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\session.py", line 2147, in _execute_internal
+    statement = coercions.expect(roles.StatementRole, statement)
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\sql\coercions.py", line 395, in expect
+    resolved = impl._literal_coercion(
+        element, argname=argname, **kw
+    )
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\sql\coercions.py", line 621, in _literal_coercion
+    return self._text_coercion(element, argname, **kw)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\sql\coercions.py", line 614, in _text_coercion
+    return _no_text_coercion(element, argname)
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\sql\coercions.py", line 584, in _no_text_coercion
+    raise exc_cls(
+    ...<7 lines>...
+    ) from err
+sqlalchemy.exc.ArgumentError: Textual SQL expression "PRAGMA table_info('diagno..." should be explicitly declared as text("PRAGMA table_info('diagno...")
+2025-11-19 14:35:33,583 WARNING:  * Debugger is active!
+2025-11-19 14:35:33,589 INFO:  * Debugger PIN: 473-223-681
+2025-11-19 14:36:31,450 ERROR: Error ensuring DB columns
+Traceback (most recent call last):
+  File "C:\Users\altaf\OneDrive\Documents\PBL 5TH sem\ai-ayuverda-complete\backend\app.py", line 185, in ensure_db_columns
+    res = db.session.execute("PRAGMA table_info('diagnosis')").fetchall()
+          ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\scoping.py", line 765, in execute
+    return self._proxied.execute(
+           ~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\session.py", line 2147, in _execute_internal
+    statement = coercions.expect(roles.StatementRole, statement)
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\sql\coercions.py", line 395, in expect
+    resolved = impl._literal_coercion(
+        element, argname=argname, **kw
+    )
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\sql\coercions.py", line 621, in _literal_coercion
+    return self._text_coercion(element, argname, **kw)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\sql\coercions.py", line 614, in _text_coercion
+    return _no_text_coercion(element, argname)
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\sql\coercions.py", line 584, in _no_text_coercion
+    raise exc_cls(
+    ...<7 lines>...
+    ) from err
+sqlalchemy.exc.ArgumentError: Textual SQL expression "PRAGMA table_info('diagno..." should be explicitly declared as text("PRAGMA table_info('diagno...")
+2025-11-19 14:36:31,591 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-19 14:36:31,592 INFO: [33mPress CTRL+C to quit[0m
+2025-11-19 14:36:31,595 INFO:  * Restarting with stat
+2025-11-19 14:36:33,575 ERROR: Error ensuring DB columns
+Traceback (most recent call last):
+  File "C:\Users\altaf\OneDrive\Documents\PBL 5TH sem\ai-ayuverda-complete\backend\app.py", line 185, in ensure_db_columns
+    res = db.session.execute("PRAGMA table_info('diagnosis')").fetchall()
+          ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\scoping.py", line 765, in execute
+    return self._proxied.execute(
+           ~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\session.py", line 2147, in _execute_internal
+    statement = coercions.expect(roles.StatementRole, statement)
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\sql\coercions.py", line 395, in expect
+    resolved = impl._literal_coercion(
+        element, argname=argname, **kw
+    )
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\sql\coercions.py", line 621, in _literal_coercion
+    return self._text_coercion(element, argname, **kw)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\sql\coercions.py", line 614, in _text_coercion
+    return _no_text_coercion(element, argname)
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\sql\coercions.py", line 584, in _no_text_coercion
+    raise exc_cls(
+    ...<7 lines>...
+    ) from err
+sqlalchemy.exc.ArgumentError: Textual SQL expression "PRAGMA table_info('diagno..." should be explicitly declared as text("PRAGMA table_info('diagno...")
+2025-11-19 14:36:33,670 WARNING:  * Debugger is active!
+2025-11-19 14:36:33,675 INFO:  * Debugger PIN: 473-223-681
+2025-11-19 14:37:05,316 INFO: 127.0.0.1 - - [19/Nov/2025 14:37:05] "POST /api/patient/register HTTP/1.1" 200 -
+2025-11-19 14:37:05,831 ERROR: DB commit failed in /api/diagnose, attempt 1
+Traceback (most recent call last):
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: table diagnosis has no column named lifestyle
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\altaf\OneDrive\Documents\PBL 5TH sem\ai-ayuverda-complete\backend\app.py", line 279, in diagnose
+    db.session.commit()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\scoping.py", line 597, in commit
+    return self._proxied.commit()
+           ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\session.py", line 2030, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\session.py", line 1311, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\session.py", line 1286, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\session.py", line 4331, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\session.py", line 4466, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\session.py", line 4427, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+        statement,
+        params,
+        execution_options=execution_options,
+    )
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) table diagnosis has no column named lifestyle
+[SQL: INSERT INTO diagnosis (patient_id, symptoms, disease, confidence, remedies, medicines, lifestyle, date, time) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: (6, 'fever cough sore throat', 'Common Cold', 33.3, 'Ginger, Turmeric, Honey, Warm water. Drink 8 glasses water daily. Get rest 3 to 7 days.', 'Aspirin, Cough syrup', 'Rest, stay hydrated, avoid cold exposure, inhale steam, increase vitamin C-rich foods, avoid smoking and cold drinks.', '2025-11-19', '14:37')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-11-19 14:37:06,215 INFO: 127.0.0.1 - - [19/Nov/2025 14:37:06] "POST /api/diagnose HTTP/1.1" 200 -
+2025-11-19 14:37:06,732 INFO: 127.0.0.1 - - [19/Nov/2025 14:37:06] "POST /api/chat HTTP/1.1" 200 -
+2025-11-19 14:37:07,073 INFO: 127.0.0.1 - - [19/Nov/2025 14:37:07] "POST /api/patient/register HTTP/1.1" 200 -
+2025-11-19 14:37:07,580 ERROR: DB commit failed in /api/diagnose, attempt 1
+Traceback (most recent call last):
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: table diagnosis has no column named lifestyle
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\altaf\OneDrive\Documents\PBL 5TH sem\ai-ayuverda-complete\backend\app.py", line 279, in diagnose
+    db.session.commit()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\scoping.py", line 597, in commit
+    return self._proxied.commit()
+           ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\session.py", line 2030, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\session.py", line 1311, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\session.py", line 1286, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\session.py", line 4331, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\session.py", line 4466, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\session.py", line 4427, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+        statement,
+        params,
+        execution_options=execution_options,
+    )
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) table diagnosis has no column named lifestyle
+[SQL: INSERT INTO diagnosis (patient_id, symptoms, disease, confidence, remedies, medicines, lifestyle, date, time) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: (6, 'fever cough sore throat', 'Common Cold', 33.3, 'Ginger, Turmeric, Honey, Warm water. Drink 8 glasses water daily. Get rest 3 to 7 days.', 'Aspirin, Cough syrup', 'Rest, stay hydrated, avoid cold exposure, inhale steam, increase vitamin C-rich foods, avoid smoking and cold drinks.', '2025-11-19', '14:37')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-11-19 14:37:07,693 INFO: 127.0.0.1 - - [19/Nov/2025 14:37:07] "POST /api/diagnose HTTP/1.1" 200 -
+2025-11-19 14:37:08,216 INFO: 127.0.0.1 - - [19/Nov/2025 14:37:08] "POST /api/chat HTTP/1.1" 200 -
+2025-11-19 14:38:28,127 INFO: 127.0.0.1 - - [19/Nov/2025 14:38:28] "OPTIONS /api/patient/login HTTP/1.1" 200 -
+2025-11-19 14:38:28,380 INFO: 127.0.0.1 - - [19/Nov/2025 14:38:28] "POST /api/patient/login HTTP/1.1" 200 -
+2025-11-19 14:38:28,612 ERROR: Unhandled exception: (sqlite3.OperationalError) no such column: diagnosis.lifestyle
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT diagnosis.id AS diagnosis_id, diagnosis.patient_id AS diagnosis_patient_id, diagnosis.symptoms AS diagnosis_symptoms, diagnosis.disease AS diagnosis_disease, diagnosis.confidence AS diagnosis_confidence, diagnosis.remedies AS diagnosis_remedies, diagnosis.medicines AS diagnosis_medicines, diagnosis.lifestyle AS diagnosis_lifestyle, diagnosis.date AS diagnosis_date, diagnosis.time AS diagnosis_time 
+FROM diagnosis 
+WHERE diagnosis.patient_id = ?) AS anon_1]
+[parameters: (1,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Traceback (most recent call last):
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: diagnosis.lifestyle
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\altaf\OneDrive\Documents\PBL 5TH sem\ai-ayuverda-complete\backend\app.py", line 371, in get_dashboard
+    total_diagnoses = Diagnosis.query.filter_by(patient_id=patient_id).count()
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\query.py", line 3146, in count
+    self._legacy_from_self(col).enable_eagerloads(False).scalar()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\query.py", line 2835, in scalar
+    ret = self.one()
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\query.py", line 2808, in one
+    return self._iter().one()  # type: ignore
+           ~~~~~~~~~~^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+        params,
+        ^^^^^^^
+        execution_options={"_sa_orm_load_options": self.load_options},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<4 lines>...
+        conn,
+        ^^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+        statement, params or {}, execution_options=execution_options
+    )
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: diagnosis.lifestyle
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT diagnosis.id AS diagnosis_id, diagnosis.patient_id AS diagnosis_patient_id, diagnosis.symptoms AS diagnosis_symptoms, diagnosis.disease AS diagnosis_disease, diagnosis.confidence AS diagnosis_confidence, diagnosis.remedies AS diagnosis_remedies, diagnosis.medicines AS diagnosis_medicines, diagnosis.lifestyle AS diagnosis_lifestyle, diagnosis.date AS diagnosis_date, diagnosis.time AS diagnosis_time 
+FROM diagnosis 
+WHERE diagnosis.patient_id = ?) AS anon_1]
+[parameters: (1,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+2025-11-19 14:38:28,613 INFO: 127.0.0.1 - - [19/Nov/2025 14:38:28] "[35m[1mGET /api/dashboard/1 HTTP/1.1[0m" 500 -
+2025-11-19 14:38:28,948 ERROR: Unhandled exception: (sqlite3.OperationalError) no such column: diagnosis.lifestyle
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT diagnosis.id AS diagnosis_id, diagnosis.patient_id AS diagnosis_patient_id, diagnosis.symptoms AS diagnosis_symptoms, diagnosis.disease AS diagnosis_disease, diagnosis.confidence AS diagnosis_confidence, diagnosis.remedies AS diagnosis_remedies, diagnosis.medicines AS diagnosis_medicines, diagnosis.lifestyle AS diagnosis_lifestyle, diagnosis.date AS diagnosis_date, diagnosis.time AS diagnosis_time 
+FROM diagnosis 
+WHERE diagnosis.patient_id = ?) AS anon_1]
+[parameters: (1,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Traceback (most recent call last):
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: diagnosis.lifestyle
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\altaf\OneDrive\Documents\PBL 5TH sem\ai-ayuverda-complete\backend\app.py", line 371, in get_dashboard
+    total_diagnoses = Diagnosis.query.filter_by(patient_id=patient_id).count()
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\query.py", line 3146, in count
+    self._legacy_from_self(col).enable_eagerloads(False).scalar()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\query.py", line 2835, in scalar
+    ret = self.one()
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\query.py", line 2808, in one
+    return self._iter().one()  # type: ignore
+           ~~~~~~~~~~^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+        params,
+        ^^^^^^^
+        execution_options={"_sa_orm_load_options": self.load_options},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\session.py", line 2249, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<4 lines>...
+        conn,
+        ^^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+        statement, params or {}, execution_options=execution_options
+    )
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: diagnosis.lifestyle
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT diagnosis.id AS diagnosis_id, diagnosis.patient_id AS diagnosis_patient_id, diagnosis.symptoms AS diagnosis_symptoms, diagnosis.disease AS diagnosis_disease, diagnosis.confidence AS diagnosis_confidence, diagnosis.remedies AS diagnosis_remedies, diagnosis.medicines AS diagnosis_medicines, diagnosis.lifestyle AS diagnosis_lifestyle, diagnosis.date AS diagnosis_date, diagnosis.time AS diagnosis_time 
+FROM diagnosis 
+WHERE diagnosis.patient_id = ?) AS anon_1]
+[parameters: (1,)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+2025-11-19 14:38:28,949 INFO: 127.0.0.1 - - [19/Nov/2025 14:38:28] "[35m[1mGET /api/dashboard/1 HTTP/1.1[0m" 500 -
+2025-11-19 14:39:43,849 INFO: 127.0.0.1 - - [19/Nov/2025 14:39:43] "POST /api/patient/register HTTP/1.1" 200 -
+2025-11-19 14:39:44,360 ERROR: DB commit failed in /api/diagnose, attempt 1
+Traceback (most recent call last):
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: table diagnosis has no column named lifestyle
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\altaf\OneDrive\Documents\PBL 5TH sem\ai-ayuverda-complete\backend\app.py", line 279, in diagnose
+    db.session.commit()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\scoping.py", line 597, in commit
+    return self._proxied.commit()
+           ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\session.py", line 2030, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\session.py", line 1311, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\session.py", line 1286, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\session.py", line 4331, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\session.py", line 4466, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\session.py", line 4427, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+        statement,
+        params,
+        execution_options=execution_options,
+    )
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\sql\elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\sqlalchemy\engine\default.py", line 951, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) table diagnosis has no column named lifestyle
+[SQL: INSERT INTO diagnosis (patient_id, symptoms, disease, confidence, remedies, medicines, lifestyle, date, time) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: (6, 'fever cough sore throat', 'Common Cold', 33.3, 'Ginger, Turmeric, Honey, Warm water. Drink 8 glasses water daily. Get rest 3 to 7 days.', 'Aspirin, Cough syrup', 'Rest, stay hydrated, avoid cold exposure, inhale steam, increase vitamin C-rich foods, avoid smoking and cold drinks.', '2025-11-19', '14:39')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-11-19 14:39:44,473 INFO: 127.0.0.1 - - [19/Nov/2025 14:39:44] "POST /api/diagnose HTTP/1.1" 200 -
+2025-11-19 14:39:45,000 INFO: 127.0.0.1 - - [19/Nov/2025 14:39:45] "POST /api/chat HTTP/1.1" 200 -
+2025-11-19 14:40:15,040 INFO:  * Detected change in 'C:\\Users\\altaf\\OneDrive\\Documents\\PBL 5TH sem\\ai-ayuverda-complete\\backend\\app.py', reloading
+2025-11-19 14:40:15,357 INFO:  * Restarting with stat
+2025-11-19 14:40:18,246 INFO: Added missing column diagnosis.lifestyle
+2025-11-19 14:40:18,384 WARNING:  * Debugger is active!
+2025-11-19 14:40:18,393 INFO:  * Debugger PIN: 473-223-681
+2025-11-19 14:41:51,170 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-19 14:41:51,170 INFO: [33mPress CTRL+C to quit[0m
+2025-11-19 14:41:51,176 INFO:  * Restarting with stat
+2025-11-19 14:41:53,272 WARNING:  * Debugger is active!
+2025-11-19 14:41:53,278 INFO:  * Debugger PIN: 473-223-681
+2025-11-19 14:42:11,901 INFO: 127.0.0.1 - - [19/Nov/2025 14:42:11] "POST /api/patient/register HTTP/1.1" 200 -
+2025-11-19 14:42:12,441 INFO: 127.0.0.1 - - [19/Nov/2025 14:42:12] "POST /api/diagnose HTTP/1.1" 200 -
+2025-11-19 14:42:12,969 INFO: 127.0.0.1 - - [19/Nov/2025 14:42:12] "POST /api/chat HTTP/1.1" 200 -
+2025-11-19 14:53:39,310 INFO: 127.0.0.1 - - [19/Nov/2025 14:53:39] "OPTIONS /api/patient/register HTTP/1.1" 200 -
+2025-11-19 14:53:39,482 INFO: 127.0.0.1 - - [19/Nov/2025 14:53:39] "POST /api/patient/register HTTP/1.1" 200 -
+2025-11-19 14:53:47,135 INFO: 127.0.0.1 - - [19/Nov/2025 14:53:47] "OPTIONS /api/patient/login HTTP/1.1" 200 -
+2025-11-19 14:53:47,395 INFO: 127.0.0.1 - - [19/Nov/2025 14:53:47] "POST /api/patient/login HTTP/1.1" 200 -
+2025-11-19 14:53:47,588 INFO: 127.0.0.1 - - [19/Nov/2025 14:53:47] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-11-19 14:53:47,917 INFO: 127.0.0.1 - - [19/Nov/2025 14:53:47] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-11-19 14:54:00,126 INFO: 127.0.0.1 - - [19/Nov/2025 14:54:00] "OPTIONS /api/diagnose HTTP/1.1" 200 -
+2025-11-19 14:54:00,171 INFO: 127.0.0.1 - - [19/Nov/2025 14:54:00] "POST /api/diagnose HTTP/1.1" 200 -
+2025-11-19 14:54:08,030 INFO: 127.0.0.1 - - [19/Nov/2025 14:54:08] "GET /api/diagnosis-history/1 HTTP/1.1" 200 -
+2025-11-19 14:54:08,345 INFO: 127.0.0.1 - - [19/Nov/2025 14:54:08] "GET /api/diagnosis-history/1 HTTP/1.1" 200 -
+2025-11-19 14:54:11,375 INFO: 127.0.0.1 - - [19/Nov/2025 14:54:11] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-11-19 14:54:11,695 INFO: 127.0.0.1 - - [19/Nov/2025 14:54:11] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-11-19 14:54:30,904 INFO: 127.0.0.1 - - [19/Nov/2025 14:54:30] "OPTIONS /api/diagnose HTTP/1.1" 200 -
+2025-11-19 14:54:30,911 INFO: 127.0.0.1 - - [19/Nov/2025 14:54:30] "POST /api/diagnose HTTP/1.1" 200 -
+2025-11-19 14:54:43,526 INFO: 127.0.0.1 - - [19/Nov/2025 14:54:43] "OPTIONS /api/diagnose HTTP/1.1" 200 -
+2025-11-19 14:54:43,534 INFO: 127.0.0.1 - - [19/Nov/2025 14:54:43] "POST /api/diagnose HTTP/1.1" 200 -
+2025-11-19 14:54:53,229 INFO: 127.0.0.1 - - [19/Nov/2025 14:54:53] "OPTIONS /api/diagnose HTTP/1.1" 200 -
+2025-11-19 14:54:53,236 INFO: 127.0.0.1 - - [19/Nov/2025 14:54:53] "POST /api/diagnose HTTP/1.1" 200 -
+2025-11-19 14:55:22,994 INFO:  * Detected change in 'C:\\Users\\altaf\\OneDrive\\Documents\\PBL 5TH sem\\ai-ayuverda-complete\\backend\\test_delete_diag.py', reloading
+2025-11-19 14:55:23,549 INFO:  * Restarting with stat
+2025-11-19 14:55:26,621 WARNING:  * Debugger is active!
+2025-11-19 14:55:26,631 INFO:  * Debugger PIN: 473-223-681
+2025-11-19 14:56:04,534 INFO: 127.0.0.1 - - [19/Nov/2025 14:56:04] "OPTIONS /api/chat HTTP/1.1" 200 -
+2025-11-19 14:56:04,803 INFO: 127.0.0.1 - - [19/Nov/2025 14:56:04] "POST /api/chat HTTP/1.1" 200 -
+2025-11-19 20:37:07,063 INFO: 127.0.0.1 - - [19/Nov/2025 20:37:07] "OPTIONS /api/patient/login HTTP/1.1" 200 -
+2025-11-19 20:37:07,385 INFO: 127.0.0.1 - - [19/Nov/2025 20:37:07] "POST /api/patient/login HTTP/1.1" 200 -
+2025-11-19 20:37:07,477 INFO: 127.0.0.1 - - [19/Nov/2025 20:37:07] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-11-19 20:37:07,807 INFO: 127.0.0.1 - - [19/Nov/2025 20:37:07] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-11-19 20:37:32,458 INFO: 127.0.0.1 - - [19/Nov/2025 20:37:32] "GET /api/health-history/1 HTTP/1.1" 200 -
+2025-11-19 20:37:32,706 INFO: 127.0.0.1 - - [19/Nov/2025 20:37:32] "GET /api/health-history/1 HTTP/1.1" 200 -
+2025-11-19 20:37:37,943 INFO: 127.0.0.1 - - [19/Nov/2025 20:37:37] "GET /api/diagnosis-history/1 HTTP/1.1" 200 -
+2025-11-19 20:37:38,258 INFO: 127.0.0.1 - - [19/Nov/2025 20:37:38] "GET /api/diagnosis-history/1 HTTP/1.1" 200 -
+2025-11-19 20:37:44,878 INFO: 127.0.0.1 - - [19/Nov/2025 20:37:44] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-11-19 20:37:45,193 INFO: 127.0.0.1 - - [19/Nov/2025 20:37:45] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-06 21:23:37,376 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-06 21:23:37,378 INFO: [33mPress CTRL+C to quit[0m
+2025-12-06 21:23:37,385 INFO:  * Restarting with stat
+2025-12-06 21:23:39,692 WARNING:  * Debugger is active!
+2025-12-06 21:23:39,705 INFO:  * Debugger PIN: 123-128-766
+2025-12-06 21:26:32,227 INFO: 127.0.0.1 - - [06/Dec/2025 21:26:32] "OPTIONS /api/chat HTTP/1.1" 200 -
+2025-12-06 21:26:32,477 INFO: 127.0.0.1 - - [06/Dec/2025 21:26:32] "POST /api/chat HTTP/1.1" 200 -
+2025-12-06 21:27:33,795 INFO: 127.0.0.1 - - [06/Dec/2025 21:27:33] "OPTIONS /api/patient/register HTTP/1.1" 200 -
+2025-12-06 21:27:34,081 INFO: 127.0.0.1 - - [06/Dec/2025 21:27:34] "POST /api/patient/register HTTP/1.1" 200 -
+2025-12-06 21:27:41,039 INFO: 127.0.0.1 - - [06/Dec/2025 21:27:41] "OPTIONS /api/patient/login HTTP/1.1" 200 -
+2025-12-06 21:27:41,363 INFO: 127.0.0.1 - - [06/Dec/2025 21:27:41] "POST /api/patient/login HTTP/1.1" 200 -
+2025-12-06 21:27:41,647 INFO: 127.0.0.1 - - [06/Dec/2025 21:27:41] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-06 21:27:41,729 INFO: 127.0.0.1 - - [06/Dec/2025 21:27:41] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-06 21:27:45,546 INFO: 127.0.0.1 - - [06/Dec/2025 21:27:45] "GET /api/diagnosis-history/1 HTTP/1.1" 200 -
+2025-12-06 21:27:45,874 INFO: 127.0.0.1 - - [06/Dec/2025 21:27:45] "GET /api/diagnosis-history/1 HTTP/1.1" 200 -
+2025-12-06 21:27:56,407 INFO: 127.0.0.1 - - [06/Dec/2025 21:27:56] "GET /api/health-history/1 HTTP/1.1" 200 -
+2025-12-06 21:27:56,675 INFO: 127.0.0.1 - - [06/Dec/2025 21:27:56] "GET /api/health-history/1 HTTP/1.1" 200 -
+2025-12-06 21:28:00,268 INFO: 127.0.0.1 - - [06/Dec/2025 21:28:00] "GET /api/consultation/1 HTTP/1.1" 200 -
+2025-12-06 21:28:00,533 INFO: 127.0.0.1 - - [06/Dec/2025 21:28:00] "GET /api/consultation/1 HTTP/1.1" 200 -
+2025-12-06 21:28:02,631 INFO: 127.0.0.1 - - [06/Dec/2025 21:28:02] "GET /api/diagnosis-history/1 HTTP/1.1" 200 -
+2025-12-06 21:28:02,954 INFO: 127.0.0.1 - - [06/Dec/2025 21:28:02] "GET /api/diagnosis-history/1 HTTP/1.1" 200 -
+2025-12-06 21:28:04,038 INFO: 127.0.0.1 - - [06/Dec/2025 21:28:04] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-06 21:28:04,359 INFO: 127.0.0.1 - - [06/Dec/2025 21:28:04] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-06 21:29:14,952 INFO: 127.0.0.1 - - [06/Dec/2025 21:29:14] "OPTIONS /api/patient/login HTTP/1.1" 200 -
+2025-12-06 21:29:15,221 INFO: 127.0.0.1 - - [06/Dec/2025 21:29:15] "POST /api/patient/login HTTP/1.1" 200 -
+2025-12-06 21:29:15,273 INFO: 127.0.0.1 - - [06/Dec/2025 21:29:15] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-06 21:29:15,554 INFO: 127.0.0.1 - - [06/Dec/2025 21:29:15] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-06 21:29:27,928 INFO: 127.0.0.1 - - [06/Dec/2025 21:29:27] "OPTIONS /api/diagnose HTTP/1.1" 200 -
+2025-12-06 21:29:27,965 INFO: 127.0.0.1 - - [06/Dec/2025 21:29:27] "POST /api/diagnose HTTP/1.1" 200 -
+2025-12-06 21:29:36,206 INFO: 127.0.0.1 - - [06/Dec/2025 21:29:36] "GET /api/diagnosis-history/1 HTTP/1.1" 200 -
+2025-12-06 21:29:36,473 INFO: 127.0.0.1 - - [06/Dec/2025 21:29:36] "GET /api/diagnosis-history/1 HTTP/1.1" 200 -
+2025-12-06 21:29:44,323 INFO: 127.0.0.1 - - [06/Dec/2025 21:29:44] "GET /api/health-history/1 HTTP/1.1" 200 -
+2025-12-06 21:29:44,591 INFO: 127.0.0.1 - - [06/Dec/2025 21:29:44] "GET /api/health-history/1 HTTP/1.1" 200 -
+2025-12-06 21:29:52,584 INFO: 127.0.0.1 - - [06/Dec/2025 21:29:52] "GET /api/consultation/1 HTTP/1.1" 200 -
+2025-12-06 21:29:52,894 INFO: 127.0.0.1 - - [06/Dec/2025 21:29:52] "GET /api/consultation/1 HTTP/1.1" 200 -
+2025-12-06 21:30:02,375 INFO: 127.0.0.1 - - [06/Dec/2025 21:30:02] "OPTIONS /api/chat HTTP/1.1" 200 -
+2025-12-06 21:30:02,688 INFO: 127.0.0.1 - - [06/Dec/2025 21:30:02] "POST /api/chat HTTP/1.1" 200 -
+2025-12-06 22:06:27,695 INFO: 127.0.0.1 - - [06/Dec/2025 22:06:27] "OPTIONS /api/patient/login HTTP/1.1" 200 -
+2025-12-06 22:06:27,938 INFO: 127.0.0.1 - - [06/Dec/2025 22:06:27] "POST /api/patient/login HTTP/1.1" 200 -
+2025-12-06 22:06:28,043 INFO: 127.0.0.1 - - [06/Dec/2025 22:06:28] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-06 22:06:28,365 INFO: 127.0.0.1 - - [06/Dec/2025 22:06:28] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-06 22:08:21,234 INFO: 127.0.0.1 - - [06/Dec/2025 22:08:21] "OPTIONS /api/patient/login HTTP/1.1" 200 -
+2025-12-06 22:08:21,501 INFO: 127.0.0.1 - - [06/Dec/2025 22:08:21] "POST /api/patient/login HTTP/1.1" 200 -
+2025-12-06 22:08:21,549 INFO: 127.0.0.1 - - [06/Dec/2025 22:08:21] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-06 22:08:21,843 INFO: 127.0.0.1 - - [06/Dec/2025 22:08:21] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-06 22:08:34,993 INFO: 127.0.0.1 - - [06/Dec/2025 22:08:34] "GET /api/diagnosis-history/1 HTTP/1.1" 200 -
+2025-12-06 22:08:35,310 INFO: 127.0.0.1 - - [06/Dec/2025 22:08:35] "GET /api/diagnosis-history/1 HTTP/1.1" 200 -
+2025-12-06 22:08:37,835 INFO: 127.0.0.1 - - [06/Dec/2025 22:08:37] "GET /api/health-history/1 HTTP/1.1" 200 -
+2025-12-06 22:08:38,095 INFO: 127.0.0.1 - - [06/Dec/2025 22:08:38] "GET /api/health-history/1 HTTP/1.1" 200 -
+2025-12-06 22:08:39,130 INFO: 127.0.0.1 - - [06/Dec/2025 22:08:39] "GET /api/consultation/1 HTTP/1.1" 200 -
+2025-12-06 22:08:39,437 INFO: 127.0.0.1 - - [06/Dec/2025 22:08:39] "GET /api/consultation/1 HTTP/1.1" 200 -
+2025-12-06 22:15:19,123 INFO: 127.0.0.1 - - [06/Dec/2025 22:15:19] "OPTIONS /api/patient/login HTTP/1.1" 200 -
+2025-12-06 22:15:19,374 INFO: 127.0.0.1 - - [06/Dec/2025 22:15:19] "POST /api/patient/login HTTP/1.1" 200 -
+2025-12-06 22:15:19,468 INFO: 127.0.0.1 - - [06/Dec/2025 22:15:19] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-06 22:15:19,797 INFO: 127.0.0.1 - - [06/Dec/2025 22:15:19] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-06 22:15:35,544 INFO: 127.0.0.1 - - [06/Dec/2025 22:15:35] "GET /api/health-history/1 HTTP/1.1" 200 -
+2025-12-06 22:15:35,854 INFO: 127.0.0.1 - - [06/Dec/2025 22:15:35] "GET /api/health-history/1 HTTP/1.1" 200 -
+2025-12-06 22:17:51,370 INFO: 127.0.0.1 - - [06/Dec/2025 22:17:51] "OPTIONS /api/patient/login HTTP/1.1" 200 -
+2025-12-06 22:17:51,641 INFO: 127.0.0.1 - - [06/Dec/2025 22:17:51] "POST /api/patient/login HTTP/1.1" 200 -
+2025-12-06 22:17:51,705 INFO: 127.0.0.1 - - [06/Dec/2025 22:17:51] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-06 22:17:52,019 INFO: 127.0.0.1 - - [06/Dec/2025 22:17:52] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-06 22:24:35,171 INFO: 127.0.0.1 - - [06/Dec/2025 22:24:35] "OPTIONS /api/patient/login HTTP/1.1" 200 -
+2025-12-06 22:24:35,412 INFO: 127.0.0.1 - - [06/Dec/2025 22:24:35] "POST /api/patient/login HTTP/1.1" 200 -
+2025-12-06 22:24:35,505 INFO: 127.0.0.1 - - [06/Dec/2025 22:24:35] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-06 22:24:35,770 INFO: 127.0.0.1 - - [06/Dec/2025 22:24:35] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-06 22:24:46,738 INFO: 127.0.0.1 - - [06/Dec/2025 22:24:46] "OPTIONS /api/chat HTTP/1.1" 200 -
+2025-12-06 22:24:47,003 INFO: 127.0.0.1 - - [06/Dec/2025 22:24:47] "POST /api/chat HTTP/1.1" 200 -
+2025-12-06 22:24:53,884 INFO: 127.0.0.1 - - [06/Dec/2025 22:24:53] "GET /api/health-history/1 HTTP/1.1" 200 -
+2025-12-06 22:24:54,143 INFO: 127.0.0.1 - - [06/Dec/2025 22:24:54] "GET /api/health-history/1 HTTP/1.1" 200 -
+2025-12-06 22:24:54,537 INFO: 127.0.0.1 - - [06/Dec/2025 22:24:54] "GET /api/diagnosis-history/1 HTTP/1.1" 200 -
+2025-12-06 22:24:54,851 INFO: 127.0.0.1 - - [06/Dec/2025 22:24:54] "GET /api/diagnosis-history/1 HTTP/1.1" 200 -
+2025-12-06 22:30:35,846 INFO: 127.0.0.1 - - [06/Dec/2025 22:30:35] "GET /api/health-history/1 HTTP/1.1" 200 -
+2025-12-06 22:30:36,109 INFO: 127.0.0.1 - - [06/Dec/2025 22:30:36] "GET /api/health-history/1 HTTP/1.1" 200 -
+2025-12-06 22:30:43,986 INFO: 127.0.0.1 - - [06/Dec/2025 22:30:43] "GET /api/diagnosis-history/1 HTTP/1.1" 200 -
+2025-12-06 22:30:44,246 INFO: 127.0.0.1 - - [06/Dec/2025 22:30:44] "GET /api/diagnosis-history/1 HTTP/1.1" 200 -
+2025-12-06 22:34:02,761 INFO: 127.0.0.1 - - [06/Dec/2025 22:34:02] "OPTIONS /api/patient/login HTTP/1.1" 200 -
+2025-12-06 22:34:03,021 INFO: 127.0.0.1 - - [06/Dec/2025 22:34:03] "POST /api/patient/login HTTP/1.1" 200 -
+2025-12-06 22:34:03,088 INFO: 127.0.0.1 - - [06/Dec/2025 22:34:03] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-06 22:34:03,372 INFO: 127.0.0.1 - - [06/Dec/2025 22:34:03] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-06 22:37:05,970 INFO: 127.0.0.1 - - [06/Dec/2025 22:37:05] "OPTIONS /api/patient/login HTTP/1.1" 200 -
+2025-12-06 22:37:06,234 INFO: 127.0.0.1 - - [06/Dec/2025 22:37:06] "POST /api/patient/login HTTP/1.1" 200 -
+2025-12-06 22:37:06,284 INFO: 127.0.0.1 - - [06/Dec/2025 22:37:06] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-06 22:37:06,579 INFO: 127.0.0.1 - - [06/Dec/2025 22:37:06] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-06 22:37:37,021 INFO: 127.0.0.1 - - [06/Dec/2025 22:37:37] "OPTIONS /api/patient/login HTTP/1.1" 200 -
+2025-12-06 22:37:37,339 INFO: 127.0.0.1 - - [06/Dec/2025 22:37:37] "POST /api/patient/login HTTP/1.1" 200 -
+2025-12-06 22:37:37,594 INFO: 127.0.0.1 - - [06/Dec/2025 22:37:37] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-06 22:37:37,672 INFO: 127.0.0.1 - - [06/Dec/2025 22:37:37] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-06 22:38:55,181 INFO: 127.0.0.1 - - [06/Dec/2025 22:38:55] "OPTIONS /api/patient/login HTTP/1.1" 200 -
+2025-12-06 22:38:55,440 INFO: 127.0.0.1 - - [06/Dec/2025 22:38:55] "POST /api/patient/login HTTP/1.1" 200 -
+2025-12-06 22:38:55,498 INFO: 127.0.0.1 - - [06/Dec/2025 22:38:55] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-06 22:38:55,778 INFO: 127.0.0.1 - - [06/Dec/2025 22:38:55] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-06 22:39:33,296 INFO: 127.0.0.1 - - [06/Dec/2025 22:39:33] "GET /api/diagnosis-history/1 HTTP/1.1" 200 -
+2025-12-06 22:39:33,617 INFO: 127.0.0.1 - - [06/Dec/2025 22:39:33] "GET /api/diagnosis-history/1 HTTP/1.1" 200 -
+2025-12-06 22:41:42,210 INFO: 127.0.0.1 - - [06/Dec/2025 22:41:42] "OPTIONS /api/patient/login HTTP/1.1" 200 -
+2025-12-06 22:41:42,474 INFO: 127.0.0.1 - - [06/Dec/2025 22:41:42] "POST /api/patient/login HTTP/1.1" 200 -
+2025-12-06 22:41:42,522 INFO: 127.0.0.1 - - [06/Dec/2025 22:41:42] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-06 22:41:42,789 INFO: 127.0.0.1 - - [06/Dec/2025 22:41:42] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-06 22:41:44,795 INFO: 127.0.0.1 - - [06/Dec/2025 22:41:44] "GET /api/health-history/1 HTTP/1.1" 200 -
+2025-12-06 22:41:45,113 INFO: 127.0.0.1 - - [06/Dec/2025 22:41:45] "GET /api/health-history/1 HTTP/1.1" 200 -
+2025-12-06 22:41:47,214 INFO: 127.0.0.1 - - [06/Dec/2025 22:41:47] "GET /api/diagnosis-history/1 HTTP/1.1" 200 -
+2025-12-06 22:41:47,537 INFO: 127.0.0.1 - - [06/Dec/2025 22:41:47] "GET /api/diagnosis-history/1 HTTP/1.1" 200 -
+2025-12-06 22:41:54,799 INFO: 127.0.0.1 - - [06/Dec/2025 22:41:54] "OPTIONS /api/chat HTTP/1.1" 200 -
+2025-12-06 22:41:55,062 INFO: 127.0.0.1 - - [06/Dec/2025 22:41:55] "POST /api/chat HTTP/1.1" 200 -
+2025-12-06 23:04:58,654 INFO: 127.0.0.1 - - [06/Dec/2025 23:04:58] "OPTIONS /api/patient/login HTTP/1.1" 200 -
+2025-12-06 23:04:58,898 INFO: 127.0.0.1 - - [06/Dec/2025 23:04:58] "POST /api/patient/login HTTP/1.1" 200 -
+2025-12-06 23:04:58,987 INFO: 127.0.0.1 - - [06/Dec/2025 23:04:58] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-06 23:04:59,256 INFO: 127.0.0.1 - - [06/Dec/2025 23:04:59] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-06 23:07:58,439 INFO: 127.0.0.1 - - [06/Dec/2025 23:07:58] "OPTIONS /api/patient/login HTTP/1.1" 200 -
+2025-12-06 23:07:58,706 INFO: 127.0.0.1 - - [06/Dec/2025 23:07:58] "POST /api/patient/login HTTP/1.1" 200 -
+2025-12-06 23:07:58,750 INFO: 127.0.0.1 - - [06/Dec/2025 23:07:58] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-06 23:07:59,064 INFO: 127.0.0.1 - - [06/Dec/2025 23:07:59] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-06 23:18:51,128 INFO: 127.0.0.1 - - [06/Dec/2025 23:18:51] "OPTIONS /api/patient/login HTTP/1.1" 200 -
+2025-12-06 23:18:51,361 INFO: 127.0.0.1 - - [06/Dec/2025 23:18:51] "POST /api/patient/login HTTP/1.1" 200 -
+2025-12-06 23:18:51,470 INFO: 127.0.0.1 - - [06/Dec/2025 23:18:51] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-06 23:18:51,754 INFO: 127.0.0.1 - - [06/Dec/2025 23:18:51] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-06 23:23:27,280 INFO: 127.0.0.1 - - [06/Dec/2025 23:23:27] "OPTIONS /api/patient/login HTTP/1.1" 200 -
+2025-12-06 23:23:27,550 INFO: 127.0.0.1 - - [06/Dec/2025 23:23:27] "POST /api/patient/login HTTP/1.1" 200 -
+2025-12-06 23:23:27,615 INFO: 127.0.0.1 - - [06/Dec/2025 23:23:27] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-06 23:23:27,882 INFO: 127.0.0.1 - - [06/Dec/2025 23:23:27] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-06 23:26:04,505 INFO: 127.0.0.1 - - [06/Dec/2025 23:26:04] "OPTIONS /api/patient/login HTTP/1.1" 200 -
+2025-12-06 23:26:04,741 INFO: 127.0.0.1 - - [06/Dec/2025 23:26:04] "POST /api/patient/login HTTP/1.1" 200 -
+2025-12-06 23:26:04,835 INFO: 127.0.0.1 - - [06/Dec/2025 23:26:04] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-06 23:26:05,132 INFO: 127.0.0.1 - - [06/Dec/2025 23:26:05] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-06 23:26:18,842 INFO: 127.0.0.1 - - [06/Dec/2025 23:26:18] "OPTIONS /api/diagnose HTTP/1.1" 200 -
+2025-12-06 23:26:18,864 INFO: 127.0.0.1 - - [06/Dec/2025 23:26:18] "POST /api/diagnose HTTP/1.1" 200 -
+2025-12-06 23:26:23,267 INFO: 127.0.0.1 - - [06/Dec/2025 23:26:23] "GET /api/diagnosis-history/1 HTTP/1.1" 200 -
+2025-12-06 23:26:23,591 INFO: 127.0.0.1 - - [06/Dec/2025 23:26:23] "GET /api/diagnosis-history/1 HTTP/1.1" 200 -
+2025-12-06 23:26:35,886 INFO: 127.0.0.1 - - [06/Dec/2025 23:26:35] "GET /api/health-history/1 HTTP/1.1" 200 -
+2025-12-06 23:26:36,210 INFO: 127.0.0.1 - - [06/Dec/2025 23:26:36] "GET /api/health-history/1 HTTP/1.1" 200 -
+2025-12-06 23:26:41,158 INFO: 127.0.0.1 - - [06/Dec/2025 23:26:41] "GET /api/consultation/1 HTTP/1.1" 200 -
+2025-12-06 23:26:41,477 INFO: 127.0.0.1 - - [06/Dec/2025 23:26:41] "GET /api/consultation/1 HTTP/1.1" 200 -
+2025-12-06 23:26:48,844 INFO: 127.0.0.1 - - [06/Dec/2025 23:26:48] "OPTIONS /api/chat HTTP/1.1" 200 -
+2025-12-06 23:26:49,160 INFO: 127.0.0.1 - - [06/Dec/2025 23:26:49] "POST /api/chat HTTP/1.1" 200 -
+2025-12-06 23:28:41,449 INFO: 127.0.0.1 - - [06/Dec/2025 23:28:41] "OPTIONS /api/chat HTTP/1.1" 200 -
+2025-12-06 23:28:41,719 INFO: 127.0.0.1 - - [06/Dec/2025 23:28:41] "POST /api/chat HTTP/1.1" 200 -
+2025-12-07 23:26:20,684 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 23:26:20,697 INFO: [33mPress CTRL+C to quit[0m
+2025-12-07 23:26:20,707 INFO:  * Restarting with stat
+2025-12-07 23:26:25,847 WARNING:  * Debugger is active!
+2025-12-07 23:26:25,859 INFO:  * Debugger PIN: 123-128-766
+2025-12-07 23:33:12,680 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 23:33:12,683 INFO: [33mPress CTRL+C to quit[0m
+2025-12-08 00:00:46,746 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-08 00:00:46,749 INFO: [33mPress CTRL+C to quit[0m
+2025-12-08 00:00:46,753 INFO:  * Restarting with stat
+2025-12-08 00:00:49,205 WARNING:  * Debugger is active!
+2025-12-08 00:00:49,211 INFO:  * Debugger PIN: 123-128-766
+2025-12-08 00:06:12,144 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-08 00:06:12,146 INFO: [33mPress CTRL+C to quit[0m
+2025-12-08 00:06:12,150 INFO:  * Restarting with stat
+2025-12-08 00:06:13,905 WARNING:  * Debugger is active!
+2025-12-08 00:06:13,914 INFO:  * Debugger PIN: 123-128-766
+2025-12-08 00:06:30,725 INFO: 127.0.0.1 - - [08/Dec/2025 00:06:30] "[35m[1mPOST /api/patient/register HTTP/1.1[0m" 201 -
+2025-12-08 00:27:37,749 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-08 00:27:37,751 INFO: [33mPress CTRL+C to quit[0m
+2025-12-08 00:27:37,755 INFO:  * Restarting with stat
+2025-12-08 00:27:39,538 WARNING:  * Debugger is active!
+2025-12-08 00:27:39,545 INFO:  * Debugger PIN: 123-128-766
+2025-12-08 00:27:52,520 INFO: 127.0.0.1 - - [08/Dec/2025 00:27:52] "[31m[1mPOST /api/patient/register HTTP/1.1[0m" 400 -
+2025-12-08 00:28:15,630 INFO: 127.0.0.1 - - [08/Dec/2025 00:28:15] "GET /api/health HTTP/1.1" 200 -
+2025-12-08 00:29:12,096 INFO: 127.0.0.1 - - [08/Dec/2025 00:29:12] "[31m[1mPOST /api/patient/register HTTP/1.1[0m" 400 -
+2025-12-08 00:29:49,235 INFO: 127.0.0.1 - - [08/Dec/2025 00:29:49] "[31m[1mPOST /api/patient/register HTTP/1.1[0m" 400 -
+2025-12-08 00:30:07,331 INFO:  * Detected change in 'c:\\Users\\altaf\\OneDrive\\Documents\\PBL 5TH sem\\ai-ayuverda-complete\\backend\\post_test.py', reloading
+2025-12-08 00:30:07,535 INFO:  * Restarting with stat
+2025-12-08 00:30:09,470 WARNING:  * Debugger is active!
+2025-12-08 00:30:09,476 INFO:  * Debugger PIN: 123-128-766
+2025-12-08 00:30:43,942 INFO: 127.0.0.1 - - [08/Dec/2025 00:30:43] "[35m[1mPOST /api/patient/register HTTP/1.1[0m" 201 -
+2025-12-08 00:30:54,816 INFO:  * Detected change in 'c:\\Users\\altaf\\OneDrive\\Documents\\PBL 5TH sem\\ai-ayuverda-complete\\backend\\smoke_test.py', reloading
+2025-12-08 00:30:55,041 INFO:  * Restarting with stat
+2025-12-08 00:30:56,763 WARNING:  * Debugger is active!
+2025-12-08 00:30:56,767 INFO:  * Debugger PIN: 123-128-766
+2025-12-08 00:31:19,822 INFO: 127.0.0.1 - - [08/Dec/2025 00:31:19] "[35m[1mPOST /api/patient/register HTTP/1.1[0m" 500 -
+2025-12-08 00:31:37,171 INFO:  * Detected change in 'c:\\Users\\altaf\\OneDrive\\Documents\\PBL 5TH sem\\ai-ayuverda-complete\\backend\\post_test.py', reloading
+2025-12-08 00:31:37,352 INFO:  * Restarting with stat
+2025-12-08 00:31:39,083 WARNING:  * Debugger is active!
+2025-12-08 00:31:39,087 INFO:  * Debugger PIN: 123-128-766
+2025-12-08 00:32:21,101 INFO: 127.0.0.1 - - [08/Dec/2025 00:32:21] "[35m[1mPOST /api/patient/register HTTP/1.1[0m" 500 -
+2025-12-08 00:32:56,992 INFO:  * Detected change in 'c:\\Users\\altaf\\OneDrive\\Documents\\PBL 5TH sem\\ai-ayuverda-complete\\backend\\app.py', reloading
+2025-12-08 00:32:57,253 INFO:  * Restarting with stat
+2025-12-08 00:32:59,377 WARNING:  * Debugger is active!
+2025-12-08 00:32:59,383 INFO:  * Debugger PIN: 123-128-766
+2025-12-08 00:33:28,370 INFO: 127.0.0.1 - - [08/Dec/2025 00:33:28] "POST /api/patient/register HTTP/1.1" 200 -
+2025-12-08 00:33:40,073 INFO: 127.0.0.1 - - [08/Dec/2025 00:33:40] "POST /api/patient/register HTTP/1.1" 200 -
+2025-12-08 00:33:40,611 INFO: 127.0.0.1 - - [08/Dec/2025 00:33:40] "POST /api/diagnose HTTP/1.1" 200 -
+2025-12-08 00:33:41,142 INFO: 127.0.0.1 - - [08/Dec/2025 00:33:41] "POST /api/chat HTTP/1.1" 200 -
+2025-12-08 00:42:29,097 INFO: 127.0.0.1 - - [08/Dec/2025 00:42:29] "OPTIONS /api/patient/login HTTP/1.1" 200 -
+2025-12-08 00:42:29,353 INFO: 127.0.0.1 - - [08/Dec/2025 00:42:29] "POST /api/patient/login HTTP/1.1" 200 -
+2025-12-08 00:42:29,583 INFO: 127.0.0.1 - - [08/Dec/2025 00:42:29] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-08 00:42:29,918 INFO: 127.0.0.1 - - [08/Dec/2025 00:42:29] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-08 00:42:44,184 INFO: 127.0.0.1 - - [08/Dec/2025 00:42:44] "OPTIONS /api/patient/register HTTP/1.1" 200 -
+2025-12-08 00:42:44,451 INFO: 127.0.0.1 - - [08/Dec/2025 00:42:44] "POST /api/patient/register HTTP/1.1" 200 -
+2025-12-08 00:42:51,971 INFO: 127.0.0.1 - - [08/Dec/2025 00:42:51] "OPTIONS /api/patient/login HTTP/1.1" 200 -
+2025-12-08 00:42:52,284 INFO: 127.0.0.1 - - [08/Dec/2025 00:42:52] "[33mPOST /api/patient/login HTTP/1.1[0m" 404 -
+2025-12-08 00:42:57,768 INFO: 127.0.0.1 - - [08/Dec/2025 00:42:57] "OPTIONS /api/patient/login HTTP/1.1" 200 -
+2025-12-08 00:42:58,085 INFO: 127.0.0.1 - - [08/Dec/2025 00:42:58] "POST /api/patient/login HTTP/1.1" 200 -
+2025-12-08 00:42:58,354 INFO: 127.0.0.1 - - [08/Dec/2025 00:42:58] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-08 00:42:58,418 INFO: 127.0.0.1 - - [08/Dec/2025 00:42:58] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-08 00:43:06,446 INFO: 127.0.0.1 - - [08/Dec/2025 00:43:06] "OPTIONS /api/chat HTTP/1.1" 200 -
+2025-12-08 00:43:06,771 INFO: 127.0.0.1 - - [08/Dec/2025 00:43:06] "POST /api/chat HTTP/1.1" 200 -
+2025-12-08 00:43:19,907 INFO: 127.0.0.1 - - [08/Dec/2025 00:43:19] "GET /api/consultation/1 HTTP/1.1" 200 -
+2025-12-08 00:43:20,221 INFO: 127.0.0.1 - - [08/Dec/2025 00:43:20] "GET /api/consultation/1 HTTP/1.1" 200 -
+2025-12-08 00:43:21,554 INFO: 127.0.0.1 - - [08/Dec/2025 00:43:21] "GET /api/health-history/1 HTTP/1.1" 200 -
+2025-12-08 00:43:21,874 INFO: 127.0.0.1 - - [08/Dec/2025 00:43:21] "GET /api/health-history/1 HTTP/1.1" 200 -
+2025-12-08 00:43:24,610 INFO: 127.0.0.1 - - [08/Dec/2025 00:43:24] "GET /api/health-history/1 HTTP/1.1" 200 -
+2025-12-08 00:43:24,931 INFO: 127.0.0.1 - - [08/Dec/2025 00:43:24] "GET /api/health-history/1 HTTP/1.1" 200 -
+2025-12-08 00:43:58,942 INFO: 127.0.0.1 - - [08/Dec/2025 00:43:58] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-08 00:43:59,196 INFO: 127.0.0.1 - - [08/Dec/2025 00:43:59] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-08 00:44:14,886 INFO: 127.0.0.1 - - [08/Dec/2025 00:44:14] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-08 00:44:15,149 INFO: 127.0.0.1 - - [08/Dec/2025 00:44:15] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-08 00:44:21,258 INFO: 127.0.0.1 - - [08/Dec/2025 00:44:21] "GET /api/diagnosis-history/1 HTTP/1.1" 200 -
+2025-12-08 00:44:21,529 INFO: 127.0.0.1 - - [08/Dec/2025 00:44:21] "GET /api/diagnosis-history/1 HTTP/1.1" 200 -
+2025-12-08 00:44:39,762 INFO: 127.0.0.1 - - [08/Dec/2025 00:44:39] "OPTIONS /api/chat HTTP/1.1" 200 -
+2025-12-08 00:44:40,085 INFO: 127.0.0.1 - - [08/Dec/2025 00:44:40] "POST /api/chat HTTP/1.1" 200 -
+2025-12-08 00:44:49,545 INFO: 127.0.0.1 - - [08/Dec/2025 00:44:49] "GET /api/diagnosis-history/1 HTTP/1.1" 200 -
+2025-12-08 00:44:49,865 INFO: 127.0.0.1 - - [08/Dec/2025 00:44:49] "GET /api/diagnosis-history/1 HTTP/1.1" 200 -
+2025-12-08 00:45:02,931 INFO: 127.0.0.1 - - [08/Dec/2025 00:45:02] "OPTIONS /api/chat HTTP/1.1" 200 -
+2025-12-08 00:45:03,254 INFO: 127.0.0.1 - - [08/Dec/2025 00:45:03] "POST /api/chat HTTP/1.1" 200 -
+2025-12-08 00:45:16,281 INFO: 127.0.0.1 - - [08/Dec/2025 00:45:16] "GET /api/diagnosis-history/1 HTTP/1.1" 200 -
+2025-12-08 00:45:16,606 INFO: 127.0.0.1 - - [08/Dec/2025 00:45:16] "GET /api/diagnosis-history/1 HTTP/1.1" 200 -
+2025-12-08 00:45:23,925 INFO: 127.0.0.1 - - [08/Dec/2025 00:45:23] "OPTIONS /api/diagnose HTTP/1.1" 200 -
+2025-12-08 00:45:23,965 INFO: 127.0.0.1 - - [08/Dec/2025 00:45:23] "POST /api/diagnose HTTP/1.1" 200 -
+2025-12-08 00:45:31,398 INFO: 127.0.0.1 - - [08/Dec/2025 00:45:31] "GET /api/diagnosis-history/1 HTTP/1.1" 200 -
+2025-12-08 00:45:31,651 INFO: 127.0.0.1 - - [08/Dec/2025 00:45:31] "GET /api/diagnosis-history/1 HTTP/1.1" 200 -
+2025-12-08 00:45:35,571 INFO: 127.0.0.1 - - [08/Dec/2025 00:45:35] "OPTIONS /api/diagnosis/27 HTTP/1.1" 200 -
+2025-12-08 00:45:35,915 INFO: 127.0.0.1 - - [08/Dec/2025 00:45:35] "DELETE /api/diagnosis/27 HTTP/1.1" 200 -
+2025-12-08 00:45:44,305 INFO: 127.0.0.1 - - [08/Dec/2025 00:45:44] "GET /api/consultation/1 HTTP/1.1" 200 -
+2025-12-08 00:45:44,575 INFO: 127.0.0.1 - - [08/Dec/2025 00:45:44] "GET /api/consultation/1 HTTP/1.1" 200 -
+2025-12-08 00:46:07,367 INFO:  * Detected change in 'c:\\Users\\altaf\\OneDrive\\Documents\\PBL 5TH sem\\ai-ayuverda-complete\\backend\\full_integration_test.py', reloading
+2025-12-08 00:46:07,927 INFO:  * Restarting with stat
+2025-12-08 00:46:10,490 WARNING:  * Debugger is active!
+2025-12-08 00:46:10,504 INFO:  * Debugger PIN: 123-128-766
+2025-12-08 00:52:08,147 INFO: 127.0.0.1 - - [08/Dec/2025 00:52:08] "OPTIONS /api/patient/login HTTP/1.1" 200 -
+2025-12-08 00:52:08,334 INFO: 127.0.0.1 - - [08/Dec/2025 00:52:08] "POST /api/patient/login HTTP/1.1" 200 -
+2025-12-08 00:52:08,523 INFO: 127.0.0.1 - - [08/Dec/2025 00:52:08] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-08 00:52:08,731 INFO: 127.0.0.1 - - [08/Dec/2025 00:52:08] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-08 00:57:15,305 INFO: 127.0.0.1 - - [08/Dec/2025 00:57:15] "OPTIONS /api/patient/login HTTP/1.1" 200 -
+2025-12-08 00:57:15,575 INFO: 127.0.0.1 - - [08/Dec/2025 00:57:15] "POST /api/patient/login HTTP/1.1" 200 -
+2025-12-08 00:57:15,632 INFO: 127.0.0.1 - - [08/Dec/2025 00:57:15] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-08 00:57:15,909 INFO: 127.0.0.1 - - [08/Dec/2025 00:57:15] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-08 00:58:29,682 INFO: 127.0.0.1 - - [08/Dec/2025 00:58:29] "OPTIONS /api/patient/login HTTP/1.1" 200 -
+2025-12-08 00:58:29,938 INFO: 127.0.0.1 - - [08/Dec/2025 00:58:29] "POST /api/patient/login HTTP/1.1" 200 -
+2025-12-08 00:58:30,004 INFO: 127.0.0.1 - - [08/Dec/2025 00:58:30] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-08 00:58:30,324 INFO: 127.0.0.1 - - [08/Dec/2025 00:58:30] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-08 01:30:51,153 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-08 01:30:51,153 INFO: [33mPress CTRL+C to quit[0m
+2025-12-08 01:30:51,157 INFO:  * Restarting with stat
+2025-12-08 01:30:52,919 WARNING:  * Debugger is active!
+2025-12-08 01:30:52,927 INFO:  * Debugger PIN: 133-555-316
+2025-12-08 01:37:21,246 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-08 01:37:21,247 INFO: [33mPress CTRL+C to quit[0m
+2025-12-08 01:37:21,251 INFO:  * Restarting with stat
+2025-12-08 01:37:23,377 WARNING:  * Debugger is active!
+2025-12-08 01:37:23,386 INFO:  * Debugger PIN: 133-555-316
+2025-12-08 01:50:51,195 INFO:  * Detected change in 'c:\\Users\\altaf\\OneDrive\\Documents\\PBL 5TH sem\\ai-ayuverda-complete\\backend\\app.py', reloading
+2025-12-08 01:50:51,652 INFO:  * Restarting with stat
+2025-12-08 01:50:53,962 WARNING:  * Debugger is active!
+2025-12-08 01:50:53,971 INFO:  * Debugger PIN: 133-555-316
+2025-12-08 01:53:27,395 INFO:  * Detected change in 'c:\\Users\\altaf\\OneDrive\\Documents\\PBL 5TH sem\\ai-ayuverda-complete\\backend\\app.py', reloading
+2025-12-08 01:53:27,594 INFO:  * Restarting with stat
+2025-12-08 01:53:29,717 WARNING:  * Debugger is active!
+2025-12-08 01:53:29,724 INFO:  * Debugger PIN: 133-555-316
+2025-12-08 01:56:36,008 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-08 01:56:36,008 INFO: [33mPress CTRL+C to quit[0m
+2025-12-08 01:56:36,012 INFO:  * Restarting with stat
+2025-12-08 01:56:37,912 WARNING:  * Debugger is active!
+2025-12-08 01:56:37,917 INFO:  * Debugger PIN: 133-555-316
+2025-12-08 02:04:12,045 ERROR: Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-12-08 02:04:12,079 INFO: 127.0.0.1 - - [08/Dec/2025 02:04:12] "[35m[1mOPTIONS /patient/login HTTP/1.1[0m" 500 -
+2025-12-08 02:04:12,080 ERROR: Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-12-08 02:04:12,083 INFO: 127.0.0.1 - - [08/Dec/2025 02:04:12] "[35m[1mOPTIONS /patient/login HTTP/1.1[0m" 500 -
+2025-12-08 02:04:12,100 ERROR: Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-12-08 02:04:12,104 INFO: 127.0.0.1 - - [08/Dec/2025 02:04:12] "[35m[1mOPTIONS /patient/register HTTP/1.1[0m" 500 -
+2025-12-08 02:04:12,108 ERROR: Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-12-08 02:04:12,109 INFO: 127.0.0.1 - - [08/Dec/2025 02:04:12] "[35m[1mOPTIONS /patient/register HTTP/1.1[0m" 500 -
+2025-12-08 02:04:13,706 ERROR: Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-12-08 02:04:13,707 INFO: 127.0.0.1 - - [08/Dec/2025 02:04:13] "[35m[1mOPTIONS /patient/login HTTP/1.1[0m" 500 -
+2025-12-08 02:04:17,203 ERROR: Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-12-08 02:04:17,205 INFO: 127.0.0.1 - - [08/Dec/2025 02:04:17] "[35m[1mOPTIONS /patient/login HTTP/1.1[0m" 500 -
+2025-12-08 02:04:17,909 ERROR: Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-12-08 02:04:17,910 INFO: 127.0.0.1 - - [08/Dec/2025 02:04:17] "[35m[1mOPTIONS /patient/login HTTP/1.1[0m" 500 -
+2025-12-08 02:04:18,058 ERROR: Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-12-08 02:04:18,059 INFO: 127.0.0.1 - - [08/Dec/2025 02:04:18] "[35m[1mOPTIONS /patient/login HTTP/1.1[0m" 500 -
+2025-12-08 02:04:18,217 ERROR: Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-12-08 02:04:18,218 INFO: 127.0.0.1 - - [08/Dec/2025 02:04:18] "[35m[1mOPTIONS /patient/login HTTP/1.1[0m" 500 -
+2025-12-08 02:04:18,343 ERROR: Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-12-08 02:04:18,344 INFO: 127.0.0.1 - - [08/Dec/2025 02:04:18] "[35m[1mOPTIONS /patient/login HTTP/1.1[0m" 500 -
+2025-12-08 02:04:18,515 ERROR: Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-12-08 02:04:18,516 INFO: 127.0.0.1 - - [08/Dec/2025 02:04:18] "[35m[1mOPTIONS /patient/login HTTP/1.1[0m" 500 -
+2025-12-08 02:04:18,664 ERROR: Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-12-08 02:04:18,666 INFO: 127.0.0.1 - - [08/Dec/2025 02:04:18] "[35m[1mOPTIONS /patient/login HTTP/1.1[0m" 500 -
+2025-12-08 02:04:18,850 ERROR: Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-12-08 02:04:18,851 INFO: 127.0.0.1 - - [08/Dec/2025 02:04:18] "[35m[1mOPTIONS /patient/login HTTP/1.1[0m" 500 -
+2025-12-08 02:04:19,081 ERROR: Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-12-08 02:04:19,082 INFO: 127.0.0.1 - - [08/Dec/2025 02:04:19] "[35m[1mOPTIONS /patient/login HTTP/1.1[0m" 500 -
+2025-12-08 02:04:26,657 INFO: 127.0.0.1 - - [08/Dec/2025 02:04:26] "OPTIONS /api/patient/register HTTP/1.1" 200 -
+2025-12-08 02:04:26,860 INFO: 127.0.0.1 - - [08/Dec/2025 02:04:26] "OPTIONS /api/patient/register HTTP/1.1" 200 -
+2025-12-08 02:04:26,981 INFO: 127.0.0.1 - - [08/Dec/2025 02:04:26] "POST /api/patient/register HTTP/1.1" 200 -
+2025-12-08 02:04:26,985 INFO: 127.0.0.1 - - [08/Dec/2025 02:04:26] "POST /api/patient/register HTTP/1.1" 200 -
+2025-12-08 02:04:28,529 ERROR: Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-12-08 02:04:28,530 INFO: 127.0.0.1 - - [08/Dec/2025 02:04:28] "[35m[1mOPTIONS /patient/login HTTP/1.1[0m" 500 -
+2025-12-08 02:04:28,547 ERROR: Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-12-08 02:04:28,549 INFO: 127.0.0.1 - - [08/Dec/2025 02:04:28] "[35m[1mOPTIONS /patient/login HTTP/1.1[0m" 500 -
+2025-12-08 02:04:28,564 ERROR: Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-12-08 02:04:28,567 INFO: 127.0.0.1 - - [08/Dec/2025 02:04:28] "[35m[1mOPTIONS /patient/register HTTP/1.1[0m" 500 -
+2025-12-08 02:04:28,571 ERROR: Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-12-08 02:04:28,572 INFO: 127.0.0.1 - - [08/Dec/2025 02:04:28] "[35m[1mOPTIONS /patient/register HTTP/1.1[0m" 500 -
+2025-12-08 02:04:30,195 ERROR: Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-12-08 02:04:30,196 INFO: 127.0.0.1 - - [08/Dec/2025 02:04:30] "[35m[1mOPTIONS /patient/login HTTP/1.1[0m" 500 -
+2025-12-08 02:04:42,780 INFO: 127.0.0.1 - - [08/Dec/2025 02:04:42] "OPTIONS /api/patient/register HTTP/1.1" 200 -
+2025-12-08 02:04:43,037 INFO: 127.0.0.1 - - [08/Dec/2025 02:04:43] "POST /api/patient/register HTTP/1.1" 200 -
+2025-12-08 02:04:44,561 ERROR: Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-12-08 02:04:44,562 ERROR: Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-12-08 02:04:44,562 INFO: 127.0.0.1 - - [08/Dec/2025 02:04:44] "[35m[1mOPTIONS /patient/login HTTP/1.1[0m" 500 -
+2025-12-08 02:04:44,564 INFO: 127.0.0.1 - - [08/Dec/2025 02:04:44] "[35m[1mOPTIONS /patient/login HTTP/1.1[0m" 500 -
+2025-12-08 02:04:44,578 ERROR: Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-12-08 02:04:44,579 INFO: 127.0.0.1 - - [08/Dec/2025 02:04:44] "[35m[1mOPTIONS /patient/register HTTP/1.1[0m" 500 -
+2025-12-08 02:04:44,581 ERROR: Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-12-08 02:04:44,582 INFO: 127.0.0.1 - - [08/Dec/2025 02:04:44] "[35m[1mOPTIONS /patient/register HTTP/1.1[0m" 500 -
+2025-12-08 02:04:51,435 ERROR: Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-12-08 02:04:51,435 INFO: 127.0.0.1 - - [08/Dec/2025 02:04:51] "[35m[1mOPTIONS /patient/login HTTP/1.1[0m" 500 -
+2025-12-08 02:04:52,917 ERROR: Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-12-08 02:04:52,918 INFO: 127.0.0.1 - - [08/Dec/2025 02:04:52] "[35m[1mOPTIONS /patient/login HTTP/1.1[0m" 500 -
+2025-12-08 02:04:53,073 ERROR: Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-12-08 02:04:53,075 INFO: 127.0.0.1 - - [08/Dec/2025 02:04:53] "[35m[1mOPTIONS /patient/login HTTP/1.1[0m" 500 -
+2025-12-08 02:04:53,294 ERROR: Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-12-08 02:04:53,294 INFO: 127.0.0.1 - - [08/Dec/2025 02:04:53] "[35m[1mOPTIONS /patient/login HTTP/1.1[0m" 500 -
+2025-12-08 02:04:53,522 ERROR: Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-12-08 02:04:53,522 INFO: 127.0.0.1 - - [08/Dec/2025 02:04:53] "[35m[1mOPTIONS /patient/login HTTP/1.1[0m" 500 -
+2025-12-08 02:04:53,685 ERROR: Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-12-08 02:04:53,686 INFO: 127.0.0.1 - - [08/Dec/2025 02:04:53] "[35m[1mOPTIONS /patient/login HTTP/1.1[0m" 500 -
+2025-12-08 02:04:53,838 ERROR: Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-12-08 02:04:53,839 INFO: 127.0.0.1 - - [08/Dec/2025 02:04:53] "[35m[1mOPTIONS /patient/login HTTP/1.1[0m" 500 -
+2025-12-08 02:04:53,986 ERROR: Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-12-08 02:04:53,987 INFO: 127.0.0.1 - - [08/Dec/2025 02:04:53] "[35m[1mOPTIONS /patient/login HTTP/1.1[0m" 500 -
+2025-12-08 02:04:54,128 ERROR: Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-12-08 02:04:54,129 INFO: 127.0.0.1 - - [08/Dec/2025 02:04:54] "[35m[1mOPTIONS /patient/login HTTP/1.1[0m" 500 -
+2025-12-08 02:04:54,290 ERROR: Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-12-08 02:04:54,290 INFO: 127.0.0.1 - - [08/Dec/2025 02:04:54] "[35m[1mOPTIONS /patient/login HTTP/1.1[0m" 500 -
+2025-12-08 02:04:54,513 ERROR: Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\altaf\AppData\Roaming\Python\Python313\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2025-12-08 02:04:54,514 INFO: 127.0.0.1 - - [08/Dec/2025 02:04:54] "[35m[1mOPTIONS /patient/login HTTP/1.1[0m" 500 -
+2025-12-08 02:05:22,482 INFO: 127.0.0.1 - - [08/Dec/2025 02:05:22] "OPTIONS /api/patient/login HTTP/1.1" 200 -
+2025-12-08 02:05:22,741 INFO: 127.0.0.1 - - [08/Dec/2025 02:05:22] "[33mPOST /api/patient/login HTTP/1.1[0m" 404 -
+2025-12-08 02:05:34,503 INFO: 127.0.0.1 - - [08/Dec/2025 02:05:34] "OPTIONS /api/patient/register HTTP/1.1" 200 -
+2025-12-08 02:05:34,755 INFO: 127.0.0.1 - - [08/Dec/2025 02:05:34] "POST /api/patient/register HTTP/1.1" 200 -
+2025-12-08 02:05:40,057 INFO: 127.0.0.1 - - [08/Dec/2025 02:05:40] "OPTIONS /api/patient/login HTTP/1.1" 200 -
+2025-12-08 02:05:40,375 INFO: 127.0.0.1 - - [08/Dec/2025 02:05:40] "POST /api/patient/login HTTP/1.1" 200 -
+2025-12-08 02:05:40,744 INFO: 127.0.0.1 - - [08/Dec/2025 02:05:40] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-08 02:05:40,773 INFO: 127.0.0.1 - - [08/Dec/2025 02:05:40] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-08 02:09:43,589 INFO: 127.0.0.1 - - [08/Dec/2025 02:09:43] "OPTIONS /api/patient/login HTTP/1.1" 200 -
+2025-12-08 02:09:43,848 INFO: 127.0.0.1 - - [08/Dec/2025 02:09:43] "POST /api/patient/login HTTP/1.1" 200 -
+2025-12-08 02:09:43,911 INFO: 127.0.0.1 - - [08/Dec/2025 02:09:43] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-08 02:09:44,185 INFO: 127.0.0.1 - - [08/Dec/2025 02:09:44] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-08 02:09:49,887 INFO: 127.0.0.1 - - [08/Dec/2025 02:09:49] "GET /api/diagnosis-history/1 HTTP/1.1" 200 -
+2025-12-08 02:09:50,130 INFO: 127.0.0.1 - - [08/Dec/2025 02:09:50] "GET /api/diagnosis-history/1 HTTP/1.1" 200 -
+2025-12-08 10:00:09,448 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-08 10:00:09,449 INFO: [33mPress CTRL+C to quit[0m
+2025-12-08 10:00:09,452 INFO:  * Restarting with stat
+2025-12-08 10:00:10,892 WARNING:  * Debugger is active!
+2025-12-08 10:00:10,902 INFO:  * Debugger PIN: 133-555-316
+2025-12-08 10:01:18,919 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-08 10:01:18,919 INFO: [33mPress CTRL+C to quit[0m
+2025-12-08 10:01:18,921 INFO:  * Restarting with stat
+2025-12-08 10:01:20,230 WARNING:  * Debugger is active!
+2025-12-08 10:01:20,236 INFO:  * Debugger PIN: 133-555-316
+2025-12-08 10:02:28,350 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-08 10:02:28,350 INFO: [33mPress CTRL+C to quit[0m
+2025-12-08 10:02:28,352 INFO:  * Restarting with stat
+2025-12-08 10:02:29,463 WARNING:  * Debugger is active!
+2025-12-08 10:02:29,465 INFO:  * Debugger PIN: 133-555-316
+2025-12-08 10:03:14,796 INFO:  * Detected change in 'c:\\Users\\altaf\\OneDrive\\Documents\\PBL 5TH sem\\ai-ayuverda-complete\\backend\\app.py', reloading
+2025-12-08 10:03:14,963 INFO:  * Restarting with stat
+2025-12-08 10:03:16,178 WARNING:  * Debugger is active!
+2025-12-08 10:03:16,181 INFO:  * Debugger PIN: 133-555-316
+2025-12-08 10:08:38,966 INFO: 127.0.0.1 - - [08/Dec/2025 10:08:38] "OPTIONS /api/chat HTTP/1.1" 200 -
+2025-12-08 10:08:39,225 INFO: 127.0.0.1 - - [08/Dec/2025 10:08:39] "POST /api/chat HTTP/1.1" 200 -
+2025-12-08 10:10:38,439 INFO: 127.0.0.1 - - [08/Dec/2025 10:10:38] "[35m[1mPOST /api/patient/register HTTP/1.1[0m" 201 -
+2025-12-08 10:10:38,988 INFO: 127.0.0.1 - - [08/Dec/2025 10:10:38] "POST /api/diagnose HTTP/1.1" 200 -
+2025-12-08 10:10:39,508 INFO: 127.0.0.1 - - [08/Dec/2025 10:10:39] "POST /api/chat HTTP/1.1" 200 -
+2025-12-08 10:10:44,521 INFO: 127.0.0.1 - - [08/Dec/2025 10:10:44] "OPTIONS /api/patient/login HTTP/1.1" 200 -
+2025-12-08 10:10:44,785 INFO: 127.0.0.1 - - [08/Dec/2025 10:10:44] "POST /api/patient/login HTTP/1.1" 200 -
+2025-12-08 10:10:44,868 INFO: 127.0.0.1 - - [08/Dec/2025 10:10:44] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-08 10:10:45,191 INFO: 127.0.0.1 - - [08/Dec/2025 10:10:45] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-08 10:11:21,951 INFO: 127.0.0.1 - - [08/Dec/2025 10:11:21] "GET /api/health-history/1 HTTP/1.1" 200 -
+2025-12-08 10:11:22,269 INFO: 127.0.0.1 - - [08/Dec/2025 10:11:22] "GET /api/health-history/1 HTTP/1.1" 200 -
+2025-12-08 10:11:42,457 INFO: 127.0.0.1 - - [08/Dec/2025 10:11:42] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-08 10:11:42,774 INFO: 127.0.0.1 - - [08/Dec/2025 10:11:42] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-08 10:11:44,453 INFO: 127.0.0.1 - - [08/Dec/2025 10:11:44] "GET /api/diagnosis-history/1 HTTP/1.1" 200 -
+2025-12-08 10:11:44,771 INFO: 127.0.0.1 - - [08/Dec/2025 10:11:44] "GET /api/diagnosis-history/1 HTTP/1.1" 200 -
+2025-12-08 10:12:12,614 INFO: 127.0.0.1 - - [08/Dec/2025 10:12:12] "OPTIONS /api/diagnose HTTP/1.1" 200 -
+2025-12-08 10:12:12,631 INFO: 127.0.0.1 - - [08/Dec/2025 10:12:12] "POST /api/diagnose HTTP/1.1" 200 -
+2025-12-08 10:12:18,167 INFO: 127.0.0.1 - - [08/Dec/2025 10:12:18] "GET /api/diagnosis-history/1 HTTP/1.1" 200 -
+2025-12-08 10:12:18,431 INFO: 127.0.0.1 - - [08/Dec/2025 10:12:18] "GET /api/diagnosis-history/1 HTTP/1.1" 200 -
+2025-12-08 10:43:37,169 INFO: 127.0.0.1 - - [08/Dec/2025 10:43:37] "OPTIONS /api/chat HTTP/1.1" 200 -
+2025-12-08 10:43:37,424 INFO: 127.0.0.1 - - [08/Dec/2025 10:43:37] "POST /api/chat HTTP/1.1" 200 -
+2025-12-08 10:44:01,353 INFO: 127.0.0.1 - - [08/Dec/2025 10:44:01] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-08 10:44:01,599 INFO: 127.0.0.1 - - [08/Dec/2025 10:44:01] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-08 10:44:05,089 INFO: 127.0.0.1 - - [08/Dec/2025 10:44:05] "GET /api/consultation/1 HTTP/1.1" 200 -
+2025-12-08 10:44:05,342 INFO: 127.0.0.1 - - [08/Dec/2025 10:44:05] "GET /api/consultation/1 HTTP/1.1" 200 -
+2025-12-08 10:44:06,474 INFO: 127.0.0.1 - - [08/Dec/2025 10:44:06] "GET /api/diagnosis-history/1 HTTP/1.1" 200 -
+2025-12-08 10:44:06,784 INFO: 127.0.0.1 - - [08/Dec/2025 10:44:06] "GET /api/diagnosis-history/1 HTTP/1.1" 200 -
+2025-12-08 10:44:14,295 INFO: 127.0.0.1 - - [08/Dec/2025 10:44:14] "GET /api/health-history/1 HTTP/1.1" 200 -
+2025-12-08 10:44:14,559 INFO: 127.0.0.1 - - [08/Dec/2025 10:44:14] "GET /api/health-history/1 HTTP/1.1" 200 -
+2025-12-08 10:44:15,433 INFO: 127.0.0.1 - - [08/Dec/2025 10:44:15] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-08 10:44:15,749 INFO: 127.0.0.1 - - [08/Dec/2025 10:44:15] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-08 10:44:42,229 INFO: 127.0.0.1 - - [08/Dec/2025 10:44:42] "OPTIONS /api/health-track HTTP/1.1" 200 -
+2025-12-08 10:44:42,503 INFO: 127.0.0.1 - - [08/Dec/2025 10:44:42] "POST /api/health-track HTTP/1.1" 200 -
+2025-12-08 10:44:45,237 INFO: 127.0.0.1 - - [08/Dec/2025 10:44:45] "GET /api/health-history/1 HTTP/1.1" 200 -
+2025-12-08 10:44:45,563 INFO: 127.0.0.1 - - [08/Dec/2025 10:44:45] "GET /api/health-history/1 HTTP/1.1" 200 -
+2025-12-08 10:45:09,779 INFO: 127.0.0.1 - - [08/Dec/2025 10:45:09] "OPTIONS /api/chat HTTP/1.1" 200 -
+2025-12-08 10:45:10,025 INFO: 127.0.0.1 - - [08/Dec/2025 10:45:10] "POST /api/chat HTTP/1.1" 200 -
+2025-12-08 10:45:21,154 INFO: 127.0.0.1 - - [08/Dec/2025 10:45:21] "OPTIONS /api/chat HTTP/1.1" 200 -
+2025-12-08 10:45:21,421 INFO: 127.0.0.1 - - [08/Dec/2025 10:45:21] "POST /api/chat HTTP/1.1" 200 -
+2025-12-08 10:45:51,531 INFO: 127.0.0.1 - - [08/Dec/2025 10:45:51] "OPTIONS /api/chat HTTP/1.1" 200 -
+2025-12-08 10:45:51,785 INFO: 127.0.0.1 - - [08/Dec/2025 10:45:51] "POST /api/chat HTTP/1.1" 200 -
+2025-12-08 10:45:57,175 INFO: 127.0.0.1 - - [08/Dec/2025 10:45:57] "OPTIONS /api/chat HTTP/1.1" 200 -
+2025-12-08 10:45:57,436 INFO: 127.0.0.1 - - [08/Dec/2025 10:45:57] "POST /api/chat HTTP/1.1" 200 -
+2025-12-08 10:46:00,554 INFO: 127.0.0.1 - - [08/Dec/2025 10:46:00] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-08 10:46:00,882 INFO: 127.0.0.1 - - [08/Dec/2025 10:46:00] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-08 10:49:23,714 INFO: 127.0.0.1 - - [08/Dec/2025 10:49:23] "GET /api/diagnosis-history/1 HTTP/1.1" 200 -
+2025-12-08 10:49:23,970 INFO: 127.0.0.1 - - [08/Dec/2025 10:49:23] "GET /api/diagnosis-history/1 HTTP/1.1" 200 -
+2025-12-08 10:56:50,346 INFO: 127.0.0.1 - - [08/Dec/2025 10:56:50] "GET /api/health-history/1 HTTP/1.1" 200 -
+2025-12-08 10:56:50,604 INFO: 127.0.0.1 - - [08/Dec/2025 10:56:50] "GET /api/health-history/1 HTTP/1.1" 200 -
+2025-12-08 10:57:02,327 INFO: 127.0.0.1 - - [08/Dec/2025 10:57:02] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-08 10:57:02,578 INFO: 127.0.0.1 - - [08/Dec/2025 10:57:02] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-08 11:41:33,786 INFO: 127.0.0.1 - - [08/Dec/2025 11:41:33] "OPTIONS /api/patient/register HTTP/1.1" 200 -
+2025-12-08 11:41:34,113 INFO: 127.0.0.1 - - [08/Dec/2025 11:41:34] "[35m[1mPOST /api/patient/register HTTP/1.1[0m" 201 -
+2025-12-08 11:41:40,040 INFO: 127.0.0.1 - - [08/Dec/2025 11:41:40] "OPTIONS /api/patient/login HTTP/1.1" 200 -
+2025-12-08 11:41:40,293 INFO: 127.0.0.1 - - [08/Dec/2025 11:41:40] "POST /api/patient/login HTTP/1.1" 200 -
+2025-12-08 11:41:40,388 INFO: 127.0.0.1 - - [08/Dec/2025 11:41:40] "GET /api/dashboard/3 HTTP/1.1" 200 -
+2025-12-08 11:41:40,712 INFO: 127.0.0.1 - - [08/Dec/2025 11:41:40] "GET /api/dashboard/3 HTTP/1.1" 200 -
+2025-12-08 11:42:18,406 INFO: 127.0.0.1 - - [08/Dec/2025 11:42:18] "OPTIONS /api/patient/register HTTP/1.1" 200 -
+2025-12-08 11:42:18,667 INFO: 127.0.0.1 - - [08/Dec/2025 11:42:18] "POST /api/patient/register HTTP/1.1" 200 -
+2025-12-08 11:42:24,062 INFO: 127.0.0.1 - - [08/Dec/2025 11:42:24] "OPTIONS /api/patient/login HTTP/1.1" 200 -
+2025-12-08 11:42:24,373 INFO: 127.0.0.1 - - [08/Dec/2025 11:42:24] "POST /api/patient/login HTTP/1.1" 200 -
+2025-12-08 11:42:24,648 INFO: 127.0.0.1 - - [08/Dec/2025 11:42:24] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-08 11:42:24,704 INFO: 127.0.0.1 - - [08/Dec/2025 11:42:24] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-08 11:42:39,316 INFO: 127.0.0.1 - - [08/Dec/2025 11:42:39] "OPTIONS /api/diagnose HTTP/1.1" 200 -
+2025-12-08 11:42:39,338 INFO: 127.0.0.1 - - [08/Dec/2025 11:42:39] "POST /api/diagnose HTTP/1.1" 200 -
+2025-12-08 11:42:46,345 INFO: 127.0.0.1 - - [08/Dec/2025 11:42:46] "GET /api/diagnosis-history/1 HTTP/1.1" 200 -
+2025-12-08 11:42:46,599 INFO: 127.0.0.1 - - [08/Dec/2025 11:42:46] "GET /api/diagnosis-history/1 HTTP/1.1" 200 -
+2025-12-08 11:43:13,257 INFO: 127.0.0.1 - - [08/Dec/2025 11:43:13] "OPTIONS /api/health-track HTTP/1.1" 200 -
+2025-12-08 11:43:13,537 INFO: 127.0.0.1 - - [08/Dec/2025 11:43:13] "POST /api/health-track HTTP/1.1" 200 -
+2025-12-08 11:43:17,285 INFO: 127.0.0.1 - - [08/Dec/2025 11:43:17] "GET /api/health-history/1 HTTP/1.1" 200 -
+2025-12-08 11:43:17,598 INFO: 127.0.0.1 - - [08/Dec/2025 11:43:17] "GET /api/health-history/1 HTTP/1.1" 200 -
+2025-12-08 11:45:02,738 INFO: 127.0.0.1 - - [08/Dec/2025 11:45:02] "GET /api/consultation/1 HTTP/1.1" 200 -
+2025-12-08 11:45:03,092 INFO: 127.0.0.1 - - [08/Dec/2025 11:45:03] "GET /api/consultation/1 HTTP/1.1" 200 -
+2025-12-08 11:45:08,634 INFO: 127.0.0.1 - - [08/Dec/2025 11:45:08] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-08 11:45:08,960 INFO: 127.0.0.1 - - [08/Dec/2025 11:45:08] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-08 11:45:21,503 INFO: 127.0.0.1 - - [08/Dec/2025 11:45:21] "OPTIONS /api/diagnose HTTP/1.1" 200 -
+2025-12-08 11:45:21,522 INFO: 127.0.0.1 - - [08/Dec/2025 11:45:21] "POST /api/diagnose HTTP/1.1" 200 -
+2025-12-08 11:45:58,584 INFO: 127.0.0.1 - - [08/Dec/2025 11:45:58] "OPTIONS /api/health-track HTTP/1.1" 200 -
+2025-12-08 11:45:58,850 INFO: 127.0.0.1 - - [08/Dec/2025 11:45:58] "POST /api/health-track HTTP/1.1" 200 -
+2025-12-08 11:46:01,436 INFO: 127.0.0.1 - - [08/Dec/2025 11:46:01] "GET /api/health-history/1 HTTP/1.1" 200 -
+2025-12-08 11:46:01,750 INFO: 127.0.0.1 - - [08/Dec/2025 11:46:01] "GET /api/health-history/1 HTTP/1.1" 200 -
+2025-12-08 11:46:39,934 INFO: 127.0.0.1 - - [08/Dec/2025 11:46:39] "OPTIONS /api/chat HTTP/1.1" 200 -
+2025-12-08 11:46:40,196 INFO: 127.0.0.1 - - [08/Dec/2025 11:46:40] "POST /api/chat HTTP/1.1" 200 -
+2025-12-08 11:57:44,644 INFO:  * Detected change in 'c:\\Users\\altaf\\OneDrive\\Documents\\PBL 5TH sem\\ai-ayuverda-complete\\backend\\app.py', reloading
+2025-12-08 11:57:45,415 INFO:  * Restarting with stat
+2025-12-08 11:57:47,934 WARNING:  * Debugger is active!
+2025-12-08 11:57:47,942 INFO:  * Debugger PIN: 133-555-316
+2025-12-08 12:03:07,855 INFO: 127.0.0.1 - - [08/Dec/2025 12:03:07] "OPTIONS /api/patient/login HTTP/1.1" 200 -
+2025-12-08 12:03:08,089 INFO: 127.0.0.1 - - [08/Dec/2025 12:03:08] "POST /api/patient/login HTTP/1.1" 200 -
+2025-12-08 12:03:08,225 INFO: 127.0.0.1 - - [08/Dec/2025 12:03:08] "GET /api/dashboard/1 HTTP/1.1" 200 -
+2025-12-08 12:03:08,554 INFO: 127.0.0.1 - - [08/Dec/2025 12:03:08] "GET /api/dashboard/1 HTTP/1.1" 200 -

@@ -1,0 +1,4 @@
+/* Basic index CSS — imports App styles */
+@import './App.css';
+
+/* You can add global overrides here if needed */

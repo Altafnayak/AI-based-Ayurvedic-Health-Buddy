@@ -1,0 +1,126 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI'; background: #f5f7fa; }
+
+/* Tricolor glassy navbar */
+.navbar {
+  background: linear-gradient(
+    120deg,
+    #ff9933 0%,
+    #ffffff 50%,
+    #138808 100%
+  );
+  color: #111;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.18);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+/* Glassy pill buttons on tricolor */
+.navbar button {
+  background: rgba(255,255,255,0.18);
+  color: #796565;
+  border: 1px solid rgba(255,255,255,0.45);
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin: 0.2rem;
+  backdrop-filter: blur(10px);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+.navbar button:hover {
+  background: rgba(255,255,255,0.3);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+}
+
+.nav-links { display: flex; gap: 0.3rem; flex-wrap: wrap; flex: 1; }
+
+.patient-name {
+  background: rgba(255,255,255,0.2);
+  padding: 0.5rem 1.2rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  border: 1px solid rgba(255,255,255,0.5);
+  backdrop-filter: blur(10px);
+}
+
+/* Rest of your styles (unchanged) */
+.container { max-width: 1200px; margin: 2rem auto; padding: 0 1rem; }
+.form-box { background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 10px 35px rgba(15,23,42,0.12); margin: 1rem 0; }
+.form-group { margin-bottom: 1.5rem; }
+label { display: block; margin-bottom: 0.5rem; font-weight: 600; }
+input, select, textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #7d6aec;
+  box-shadow: 0 0 0 3px rgba(125,106,236,0.2);
+}
+textarea { min-height: 100px; }
+
+button {
+  background: linear-gradient(135deg, #7d6aec, #3ec9e0);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+}
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(125,106,236,0.4);
+}
+
+.dashboard-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; }
+.stat-card { background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 2px 12px rgba(15,23,42,0.08); text-align: center; }
+.stat-value { font-size: 2rem; font-weight: bold; color: #7d6aec; }
+.stat-label { color: #666; margin-top: 0.5rem; }
+.diagnosis-card { background: #f9f9f9; padding: 1.5rem; border-radius: 10px; border-left: 4px solid #7d6aec; margin-bottom: 1rem; }
+.diagnosis-card h3 { color: #7d6aec; }
+.confidence { display: inline-block; background: #4caf50; color: white; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.9rem; }
+.history-container { max-height: 600px; overflow-y: auto; }
+.chart-container { background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 4px 24px rgba(15,23,42,0.1); margin: 1rem 0; }
+
+@media (max-width: 768px) {
+  .nav-links { flex-direction: column; width: 100%; }
+  .navbar { flex-direction: column; align-items: flex-start; }
+  .dashboard-grid { grid-template-columns: 1fr; }
+}
+.brand {
+  display: inline-flex;      /* image + text in one line */
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.brand-logo {
+  width: 50px;               /* small fixed size */
+  height: 50px;
+  object-fit: contain;       /* keep proportions */
+}
+.ask-veda-btn {
+  display: inline-flex;      /* icon + text in one line */
+  align-items: center;
+  gap: 0.4rem;               /* space between icon and text */
+}
+
+.ask-veda-icon {
+  width: 50px;               /* adjust size as you like */
+  height: 50px;
+  border-radius: 50%;        /* optional: round icon look */
+  object-fit: cover;
+}
