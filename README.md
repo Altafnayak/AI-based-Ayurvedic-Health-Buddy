@@ -43,7 +43,7 @@ npm start
 7. **View Graphs** - See health trends (Line & Bar Charts)
 8. **Doctor Visits** - Add & manage doctor consultations
 9. **History** - View all past diagnoses with voice support
-
+10. **Ask veda** - AI agent which give remidies in local languge in kannda and in english with speak option
 ## 💾 DATA STORAGE
 
 - ✅ All patient data saved in database
@@ -71,7 +71,8 @@ npm start
 - Insomnia
 - Thyroid Disorder
 - Skin Allergy
-
+- ayurvedic_symptom_remedies_bilingual.csv dataset
+- 
 ## 🛠️ TECH STACK
 
 - Backend: Python Flask, SQLAlchemy
@@ -91,6 +92,3 @@ Works on Desktop, Tablet, Mobile
 - Clear cache if issues occur
 - Backend must run on port 5000
 
-## 🎯 This is your complete, production-ready healthcare system!
-
-All features working. All data persistent. Ready to deploy!
